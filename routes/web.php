@@ -19,13 +19,12 @@ use App\Http\Controllers\TitleController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('dashboard');
+})->name('dashboard');
 
 Route::prefix('client')->group(function()
 {
     Route::get('list' , [ClientController::class , 'list'])->name('client-list');
-    Route::get('/' , [ClientController::class , 'index'])->name('client-index');
     Route::get('create' , [ClientController::class , 'create'])->name('client-create');
     Route::get('/' , [ClientController::class , 'store'])->name('client-store');
 
@@ -43,7 +42,6 @@ Route::prefix('title')->group(function()
 
 Route::prefix('rent')->group(function()
 {
-    Route::get('/' , [RentController::class , 'index'])->name('rent-index');
     Route::get('list' , [RentController::class , 'list'])->name('rent-list');
     Route::get('create' , [RentController::class , 'create'])->name('rent-create');
     Route::get('/' , [RentController::class , 'store'])->name('rent-store');

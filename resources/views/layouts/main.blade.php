@@ -10,7 +10,7 @@
   <body class="p-3 mb-2 bg-body-tertiary">
 
     @yield('header')
-        <a class="btn btn-primary" href= "#" role="button">Dashboard</a>
+        <a class="btn btn-primary" href= "{{ route('dashboard')}}" role="button">Dashboard</a>
         <a class="btn btn-primary" href= "{{ route('client-list')}}" role="button">Clientes</a>
         <a class="btn btn-primary" href= "{{ route('title-list')}}" role="button">Titulos</a>
         <a class="btn btn-primary" href= "{{ route('rent-list')}}" role="button">Locação</a>
@@ -26,5 +26,5 @@
         </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
+    </body>
 </html>

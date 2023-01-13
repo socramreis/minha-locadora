@@ -18,7 +18,7 @@
         </div>
         <div class="col-md-4">
           <label for="inputPassword4" class="form-label">CPF / CNPJ</label>
-          <input type="text" class="form-control" id="inputcpf">
+          <input type="text" class="form-control" id="cpf_form">
         </div>
         <div class="col-md-2">
             <label for="inputPassword4" class="form-label">Data Nascimento</label>
@@ -72,7 +72,8 @@
 
     @endsection
 
-</body>
+    
+    </body>
 </html>
 
 
