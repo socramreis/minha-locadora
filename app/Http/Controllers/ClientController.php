@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\client;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
@@ -21,8 +22,9 @@ class ClientController extends Controller
         return view('client.create');
     }
 
-    public function store ()
+    public function store (Request $request)
     {
-
+        client::create($request->all());
+        return redirect()->route('client-list');
     }
 }

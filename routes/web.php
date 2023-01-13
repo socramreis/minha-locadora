@@ -26,7 +26,7 @@ Route::prefix('client')->group(function()
 {
     Route::get('list' , [ClientController::class , 'list'])->name('client-list');
     Route::get('create' , [ClientController::class , 'create'])->name('client-create');
-    Route::get('/' , [ClientController::class , 'store'])->name('client-store');
+    Route::post('/' , [ClientController::class , 'store'])->name('client-store');
 
 }) ;
 
