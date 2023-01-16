@@ -7,14 +7,11 @@ use Illuminate\Http\Request;
 
 class ClientController extends Controller
 {
-    public function index ()
-    {
-        return view('cliente.list');
-    }
 
     public function list ()
     {
-        return view('client.list');
+        $clients = client::all();
+        return view('client.list' , ['client' => $clients]);
     }
 
     public function create ()

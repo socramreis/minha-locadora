@@ -33,24 +33,15 @@
         </tr>
     </thead>
     <tbody>
+        @foreach ($client as $client)
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <th> {{$client->idclient}} </th>
+            <th> {{$client->name}}</th>
+            <th> {{$client->cpf}}</th>
+            <th> {{$client->email}}</th>
         </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-        <td>@fat</td>
-    </tr>
-    <tr>
-        <th scope="row">3</th>
-        <td colspan="2">Larry the Bird</td>
-        <td>@twitter</td>
-    </tr>
-</tbody>
+            @endforeach
+    </tbody>
 </table>
 
 <div class="input-group mb-2">
