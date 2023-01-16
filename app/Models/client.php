@@ -14,7 +14,6 @@ class client extends Model
         'name',
         'email',
         'cpf',
-        'datanascimento',
         'celular',
         'cep',
         'endereco',
