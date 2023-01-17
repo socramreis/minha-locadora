@@ -27,32 +27,21 @@
     <thead>
       <tr>
           <th scope="col">#</th>
-          <th scope="col">Status</th>
-          <th scope="col">Capa</th>
-          <th scope="col">Titulo</th>
-          <th scope="col">Resumo</th>
-          <th scope="col">Valor</th>
+          <th scope="col">Nome Titulo</th>
+          <th scope="col">Ano Lançamento</th>
+          <th scope="col">Valor Locação</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+           @foreach ( $title as $title)
+                <th> {{$title->idtitle}} </th>
+                <th> {{$title->nometitle}}</th>
+                <th> {{$title->anotitle}}</th>
+                <th> {{$title->valortitle}}</th>
+           @endforeach
         </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-        <td>@fat</td>
-    </tr>
-    <tr>
-        <th scope="row">3</th>
-        <td colspan="2">Larry the Bird</td>
-        <td>@twitter</td>
-    </tr>
-</tbody>
+    </tbody>
 </table>
 
 <div class="input-group mb-2">
