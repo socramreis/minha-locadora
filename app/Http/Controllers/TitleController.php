@@ -21,7 +21,6 @@ class TitleController extends Controller
 
     public function store (Request $request)
     {
-        dd($request);
         title::create($request->all());
         return redirect()->route('title-list');
     }

@@ -11,7 +11,8 @@
 <body>
     @section('content')
 
-    <form class="row g-3" method="POST" action="{{ route('title-store') }}">
+    <form class="row g-3" method="POST" action="{{ route ('title-store') }}">
+        @csrf
         <div class="col-md-6">
           <label for="inputEmail4" class="form-label">Nome</label>
           <input type="text" class="form-control" id="inputEmail4" name="nometitle">
@@ -22,11 +23,11 @@
         </div>
         <div class="col-md-2">
             <label for="inputPassword4" class="form-label">Valor Locação</label>
-            <input type="password" class="form-control" id="inputPassword4" name="valortitle">
+            <input type="text" class="form-control" id="inputPassword4" name="valortitle">
           </div>
         <div class="col-2">
           <label for="inputAddress" class="form-label">Multa Atraso R$</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="multatitle">
+          <input type="text" class="form-control" id="inputAddress" name="multatitle">
         </div>
         <div class="col-12">
         <input type="submit" class="btn btn-success" name="submit" value="Gravar">

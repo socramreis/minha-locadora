@@ -39,6 +39,8 @@
                 <th> {{$client->name}}</th>
                 <th> {{$client->cpf}}</th>
                 <th> {{$client->email}}</th>
+                <th> {{$client->celular}}</th>
+
             @endforeach
         </tr>
     </tbody>

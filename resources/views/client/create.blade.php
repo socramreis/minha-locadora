@@ -60,7 +60,7 @@
         <div class="col-md-1">
             <label for="inputCity" class="form-label">estado</label>
             <input type="text" class="form-control" id="cidade" name="estado">
-          </div>
+        </div>
       <!--  <div class="col-md-1">
           <label for="inputState" class="form-label">UF</label>
           <select id="inputState" class="form-select">
