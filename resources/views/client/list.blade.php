@@ -29,7 +29,8 @@
           <th scope="col">#</th>
           <th scope="col">Nome</th>
           <th scope="col">CPF</th>
-          <th scope="col">Telefone</th>
+          <th scope="col">E-mail</th>
+          <th scope="col">Celular</th>
         </tr>
     </thead>
     <tbody>
@@ -39,6 +40,8 @@
             <th> {{$client->name}}</th>
             <th> {{$client->cpf}}</th>
             <th> {{$client->email}}</th>
+            <th> {{$client->celular}}</th>
+
         </tr>
             @endforeach
     </tbody>
