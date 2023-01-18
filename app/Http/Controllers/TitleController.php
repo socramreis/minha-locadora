@@ -3,17 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\title;
+
 
 class TitleController extends Controller
 {
-    public function index ()
-    {
-        echo 'index';
-    }
-
     public function list ()
     {
-        return view('title.list');
+        $titles = title::all();
+        return view('title.list' , ['title' => $titles]);
     }
 
     public function create ()
@@ -21,8 +19,10 @@ class TitleController extends Controller
         return view('title.create');
     }
 
-    public function store ()
+    public function store (Request $request)
     {
-
+        dd($request);
+        title::create($request->all());
+        return redirect()->route('title-list');
     }
 }

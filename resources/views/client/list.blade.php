@@ -33,17 +33,14 @@
           <th scope="col">Celular</th>
         </tr>
     </thead>
-    <tbody>
-        @foreach ($client as $client)
         <tr>
-            <th> {{$client->idclient}} </th>
-            <th> {{$client->name}}</th>
-            <th> {{$client->cpf}}</th>
-            <th> {{$client->email}}</th>
-            <th> {{$client->celular}}</th>
-
-        </tr>
+            @foreach ($client as $client)
+                <th> {{$client->idclient}} </th>
+                <th> {{$client->name}}</th>
+                <th> {{$client->cpf}}</th>
+                <th> {{$client->email}}</th>
             @endforeach
+        </tr>
     </tbody>
 </table>
 

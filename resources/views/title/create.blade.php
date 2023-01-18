@@ -11,25 +11,25 @@
 <body>
     @section('content')
 
-    <form class="row g-3">
+    <form class="row g-3" method="POST" action="{{ route('title-store') }}">
         <div class="col-md-6">
           <label for="inputEmail4" class="form-label">Nome</label>
-          <input type="email" class="form-control" id="inputEmail4">
+          <input type="text" class="form-control" id="inputEmail4" name="nometitle">
         </div>
         <div class="col-md-2">
           <label for="inputPassword4" class="form-label">Ano Lançamento</label>
-          <input type="password" class="form-control" id="inputPassword4">
+          <input type="text" class="form-control" id="inputPassword4" name="anotitle">
         </div>
         <div class="col-md-2">
             <label for="inputPassword4" class="form-label">Valor Locação</label>
-            <input type="password" class="form-control" id="inputPassword4">
+            <input type="password" class="form-control" id="inputPassword4" name="valortitle">
           </div>
         <div class="col-2">
-          <label for="inputAddress" class="form-label">Multa Atraso</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          <label for="inputAddress" class="form-label">Multa Atraso R$</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="multatitle">
         </div>
-                <div class="col-12">
-            <a type="submit" class="btn btn-success" href="{{ route('client-create') }}">Cadastrar</a>
+        <div class="col-12">
+        <input type="submit" class="btn btn-success" name="submit" value="Gravar">
         </div>
       </form>
 

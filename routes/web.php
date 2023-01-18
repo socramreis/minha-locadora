@@ -36,7 +36,7 @@ Route::prefix('title')->group(function()
     Route::get('/' , [titleController::class , 'index'])->name('title-index');
     Route::get('list' , [titleController::class , 'list'])->name('title-list');
     Route::get('create' , [titleController::class , 'create'])->name('title-create');
-    Route::get('/' , [titleController::class , 'store'])->name('title-store');
+    Route::post('/' , [titleController::class , 'store'])->name('title-store');
 
 }) ;
 
