@@ -24,4 +24,11 @@ class ClientController extends Controller
         client::create($request->all());
         return redirect()->route('client-list');
     }
+
+    public function edit ($idclient)
+    {
+        $clients = Client::where('idclient' , $idclient)->first();
+        return view('client.edit' , ['client' => $clients]);
+        ;
+    }
 }
