@@ -5,7 +5,7 @@
 
 @section('header')
 
-@section('title' , 'Locadora Videos - Titulos')
+@section('title' , 'Locadora Bicicleta -- Titulos')
 
 
 @section('content')
@@ -18,11 +18,11 @@
     </nav>
 </div>
 <div class = "mb-4">
-    <a type="submit" class="btn btn-success" href="{{ route('title-create') }}">Cadastrar Novo</a>
+    <a type="submit" class="btn btn-success" href="{{ route('bike-create') }}">Cadastrar Novo</a>
 </div>
 
 
-<table class="table table-striped" style="mb-6 ">
+<table class="table table-striped" style="mb-6">
 
     <thead>
       <tr>
@@ -34,11 +34,11 @@
     </thead>
     <tbody>
         <tr>
-           @foreach ( $title as $title)
-                <th> {{$title->idtitle}} </th>
-                <th> {{$title->nometitle}}</th>
-                <th> {{$title->anotitle}}</th>
-                <th> {{$title->valortitle}}</th>
+           @foreach ( $bike as $bike)
+                <th> {{$bike->idbike}} </th>
+                <th> {{$bike->nomebike}}</th>
+                <th> {{$bike->anobike}}</th>
+                <th> {{$bike->valorbike}}</th>
            @endforeach
         </tr>
     </tbody>
@@ -53,7 +53,6 @@
 
 
 @endsection
-
 
 
 

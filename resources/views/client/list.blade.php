@@ -5,7 +5,7 @@
 
 @section('header')
 
-@section('title' , 'Locadora Videos - Clientes')
+@section('title' , 'Locadora Bicicleta -- Clientes')
 
 
 @section('content')

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Createbike extends Migration
+class CreateBikes extends Migration
 {
     /**
      * Run the migrations.
@@ -15,13 +15,15 @@ class Createbike extends Migration
     {
         Schema::create('bikes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('anobike');
-            $table->string('nomebike');
+            $table->string('numeroserie');
+            $table->date('anobike');
             $table->integer('valorbike');
+            $table->string('corbike');
+            $table->string('fotobike');
             $table->integer('multabike');
             $table->timestamps();
+      
         });
-
     }
 
     /**
@@ -31,6 +33,6 @@ class Createbike extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bike');
+        Schema::dropIfExists('bikes');
     }
 }

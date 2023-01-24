@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title')</title>
-</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
   <body class="p-3 mb-2 bg-body-tertiary">
@@ -12,7 +11,7 @@
     @yield('header')
         <a class="btn btn-primary" href= "{{ route('dashboard')}}" role="button">Dashboard</a>
         <a class="btn btn-primary" href= "{{ route('client-list')}}" role="button">Clientes</a>
-        <a class="btn btn-primary" href= "{{ route('title-list')}}" role="button">Titulos</a>
+        <a class="btn btn-primary" href= "{{ route('bike-list')}}" role="button">Bicicletas</a>
         <a class="btn btn-primary" href= "{{ route('rent-list')}}" role="button">Locação</a>
 
     @yield('content')

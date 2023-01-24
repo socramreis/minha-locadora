@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title' , 'Locadora Videos - Home')
+@section('title' , 'Locadora Bicicleta -- Home')
 
 @section('content')
 

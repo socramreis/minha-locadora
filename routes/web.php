@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\RentController;
-use App\Http\Controllers\TitleController;
+use App\Http\Controllers\BikeController;
 
 
 
@@ -32,13 +32,13 @@ Route::prefix('client')->group(function()
 
 }) ;
 
-Route::prefix('title')->group(function()
+Route::prefix('bike')->group(function()
 {
 
-    Route::get('/' , [titleController::class , 'index'])->name('title-index');
-    Route::get('list' , [titleController::class , 'list'])->name('title-list');
-    Route::get('create' , [titleController::class , 'create'])->name('title-create');
-    Route::post('/' , [titleController::class , 'store'])->name('title-store');
+    Route::get('/' , [BikeController::class , 'index'])->name('bike-index');
+    Route::get('list' , [BikeController::class , 'list'])->name('bike-list');
+    Route::get('create' , [BikeController::class , 'create'])->name('bike-create');
+    Route::post('/' , [BikeController::class , 'store'])->name('bike-store');
 
 }) ;
 
